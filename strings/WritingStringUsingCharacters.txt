@@ -2,4 +2,4 @@ char name[10]={'R', 'i', 'y', 'a', '\0'}
 char name[]={'R', 'i', 'y', 'a', '\0'}
 char name[]="Riya"
 3rd one is the best method out of these
-It is possible to print and input the array using just the array name for string type arrays only
+It is possible to print and input the array using just the array name for char type arrays only

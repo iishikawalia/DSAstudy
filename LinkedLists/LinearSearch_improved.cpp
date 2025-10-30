@@ -1,3 +1,0 @@
-//We have two ways of improving linear search
-//1. Transposition
-//2. Move to head

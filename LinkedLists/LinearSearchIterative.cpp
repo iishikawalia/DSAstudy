@@ -8,23 +8,7 @@ class Node
     Node* next;
 };
 
-int RMax(struct Node *p)
-{
-    int x=0;
-
-    if(p==0)
-    {
-        return INT32_MIN;
-    }
-    x=RMax(p->next);
-    if(x>p->data)
-    {
-        return x;
-    }
-    else return p->data;
-}
-
-Node* search(Node *p, int key)
+Node* LSearch(struct Node *p, int key)
 {
     while(p!=NULL)
     {
@@ -70,9 +54,17 @@ int main(){
         p=p->next;
     }
     cout<<"NULL"<<endl;
-    
-    //max
-    cout<<"Max is "<<RMax(head);
 
+    //search
+    struct Node *tempp;
+    tempp=LSearch(head, 41);
+    if(tempp)
+    {
+        cout<<"Key is found "<<tempp->data<<endl;
+    }
+    else
+    {
+        cout<<"Key is not found"<<endl;
+    }
     return 0;
 }
